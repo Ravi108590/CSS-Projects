@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pseudo class</title>
+        <style>
+        
+            a:hover{
+                color: red;
+                font-weight: bold;
+            }
+            a:active{
+                color: green;
+                font-weight: bold;
+            }
+            .myfrom input:focus{
+                background:pink;
+                width: 300px;
+            }
+            .mylist li:first-child{
+                color: orange;
+                font-weight: bold;
+
+            }
+            .mylist li:last-child{
+                color: Blue;
+                font-weight: bold;
+
+            }
+            .mylist li:nth-child(3){
+                color: Green;
+                font-weight: bold;
+
+            }
+            .mylist li:nth-child(5){
+                color: red;
+                font-weight: bold;
+
+            }
+            .mylist li:nth-child(even){
+                background: yellow;
+                font-weight: bold;
+
+            }
+            .mylist li:nth-child(odd){
+                background: gray;
+                font-weight: bold;
+
+            }
+        </style>
+    </head>
+    <body>
+        <a href="#">Click me</a>
+
+        <form class="muform">
+            <input type="text">
+        </form>
+        <ul class="mylist">
+            <li>First item-list</li>
+            <li>Second item-list</li>
+            <li>Third item-list</li>
+            <li>Fourth item-list</li>
+            <li>Fifth item-list</li>
+            <li>Sixth item-list</li>
+            <li>Seventh item-list</li>
+        </ul>
+    </body>
+</html>

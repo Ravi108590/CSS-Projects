@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Color,Background and Gradient</title>
+        <style>
+            body{
+                background-image: url(imeg3.png);
+                background-repeat: no-repeat;
+            }
+            #rounded1{
+                background:rgb(255,0,100);
+                color: white;
+                border-radius: 20px;
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+            }
+            #rounded2{
+                background:hsl(120, 100%, 50%);
+                color: white;
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+            }
+            #rounded3{
+                background : hsla(120, 100%, 50%, 0.3);
+                color: black;
+                border-radius: 50%;
+                border: 4px black solid;
+                width: 200px;
+                height: 200px;
+                padding: 10px;
+            }
+            img{
+                float: right;
+                border-radius: 30%;
+            }
+            #border_image{
+                border: 30px solid transparent;
+                padding: 15px;
+                border-image: url(imeg.jpg) 3 round;
+            }
+            #my-bg{
+                background-image: url(imeg2.png), url(imeg1.png);
+                background-position: right bottom, left top;
+                background-repeat: no-repeat;
+                padding: 15px, 200px, 15px, 15px;
+                background-size: 100px, 100px;
+            }
+            #grade1{
+                width: 500px;
+                height: 200px;
+                background: blue;
+                background: linear-gradient(blue, black, green);
+            }
+            #grade2{
+                width: 500px;
+                height: 200px;
+                background: blue;
+                background: linear-gradient(to left ,blue, black, green);
+            }
+            #grade3{
+                width: 500px;
+                height: 200px;
+                background: blue;
+                background: linear-gradient(to bottom, blue, black, green);
+            }
+            #grade4{
+                width: 500px;
+                height: 200px;
+                background: blue;
+                background: radial-gradient(blue 10%, black 5%, green 60%);
+            }
+            #grade5{
+                width: 500px;
+                height: 200px;
+                background: blue;
+                background: radial-gradient(circle, blue 10%, black 5%, green 60%);
+            }
+            #grade6{
+                width: 500px;
+                height: 200px;
+                background: blue;
+                background: repeating-radial-gradient(blue 10%, black 5%, green 60%);
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="rounded1">Rounded courners First</div>
+        <br/>
+        <div id="rounded2">Rounded courners Second</div>
+        <br/>
+        <div id="rounded3">Rounded courners Third</div>
+        <br/>
+        <img src="imeg.jpg">
+        <br/>
+        <div id="border_image">This is a under of the border image</div>
+        <br/>
+        <div id = "my-bg">
+            <h1>Welcome</h1>
+            <p>
+                Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy 
+                text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                 It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. 
+                 It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                  publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+        <br/>
+        <div id="grade1">Hello to all in grade1</div><br/>
+        <div id="grade2"></div><br/>
+        <div id="grade3"></div></body><br/>
+        <div id="grade4"></div><br/>
+        <div id="grade5"></div><br/>
+        <div id="grade6"></div><br/>
+
+    </body>
+</html>
